@@ -1,0 +1,277 @@
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #24342c;
+  background: #faf9f6;
+  font-synthesis: none;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+button,
+input {
+  font: inherit;
+}
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #c9cec7;
+  padding: 12px 18px;
+  color: inherit;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #af743c;
+  outline-offset: 4px;
+}
+header {
+  height: 100px;
+  border-bottom: 1px solid #dedfd8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+}
+.brand {
+  font-family: Manrope, sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  text-decoration: none;
+  color: inherit;
+  letter-spacing: -2px;
+}
+.brand span {
+  color: #a58358;
+}
+.header-note,
+.eyebrow,
+.image-label,
+.image-caption,
+footer {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.bag {
+  border: 0;
+  font-size: 12px;
+}
+main {
+  max-width: 1400px;
+  margin: auto;
+  padding: 32px 6% 80px;
+}
+nav {
+  font-size: 11px;
+  color: #6d756d;
+  margin-bottom: 32px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1.18fr 1fr;
+  gap: 7%;
+}
+.gallery {
+  position: relative;
+  background: #eaece5;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+}
+.image-label {
+  position: absolute;
+  top: 26px;
+  left: 26px;
+  z-index: 1;
+  color: #566257;
+}
+.image-caption {
+  position: absolute;
+  bottom: 26px;
+  left: 26px;
+}
+.details {
+  padding: 20px 0;
+}
+.eyebrow {
+  color: #7c806c;
+  margin-bottom: 18px;
+}
+h1 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 500;
+  letter-spacing: -1.7px;
+  margin: 0 0 12px;
+}
+.price {
+  font-size: 21px;
+  margin: 0 0 24px;
+}
+.description {
+  color: #70766f;
+  line-height: 1.8;
+  font-size: 14px;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0 0 24px;
+}
+legend {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  width: 100%;
+}
+legend span {
+  font-weight: 400;
+  color: #7b8079;
+  margin-left: 14px;
+}
+.choices {
+  display: flex;
+  gap: 10px;
+}
+.choices button {
+  min-width: 54px;
+  font-size: 12px;
+}
+.choices .selected {
+  background: #293e32;
+  color: white;
+  border-color: #293e32;
+}
+.stock {
+  font-size: 12px;
+  color: #5d715a;
+  min-height: 18px;
+  margin: 25px 0;
+}
+.purchase {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+}
+.purchase label {
+  font-size: 11px;
+  width: 80px;
+}
+.purchase input {
+  display: block;
+  width: 80px;
+  height: 49px;
+  border: 1px solid #c9cec7;
+  background: transparent;
+  margin-top: 6px;
+  padding: 10px;
+}
+.add {
+  background: #293e32;
+  color: #fff;
+  flex: 1;
+  height: 49px;
+  text-align: left;
+  border: 0;
+  font-size: 13px;
+}
+.add span {
+  float: right;
+}
+.feedback {
+  min-height: 20px;
+  font-size: 13px;
+}
+.hint {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.benefits {
+  border-top: 1px solid #dedfd8;
+  padding-top: 16px;
+  font-size: 11px;
+  color: #71786f;
+  line-height: 1.8;
+}
+details {
+  border-top: 1px solid #dedfd8;
+  margin-top: 22px;
+  padding-top: 20px;
+  font-size: 12px;
+}
+summary {
+  cursor: pointer;
+}
+details p {
+  line-height: 1.8;
+  color: #71786f;
+}
+footer {
+  border-top: 1px solid #dedfd8;
+  padding: 30px 6%;
+  display: flex;
+  justify-content: space-between;
+  color: #71786f;
+}
+.loading {
+  min-height: 65vh;
+  padding: 80px 0;
+}
+@media (max-width: 700px) {
+  header {
+    height: 75px;
+  }
+  .header-note {
+    display: none;
+  }
+  main {
+    padding: 22px 20px 50px;
+  }
+  nav {
+    margin-bottom: 22px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .gallery {
+    min-height: 360px;
+  }
+  .gallery img {
+    max-height: 420px;
+  }
+  .details {
+    padding: 8px 0;
+  }
+  .image-label,
+  .image-caption {
+    font-size: 8px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  footer {
+    gap: 20px;
+    line-height: 1.8;
+  }
+  footer span:last-child {
+    display: none;
+  }
+}
